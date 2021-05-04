@@ -17,6 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <CheckBox
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="50dp"
+        android:button="@drawable/bg_checkbox"
         android:text="Android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
