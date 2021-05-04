@@ -5,24 +5,152 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:focusable="true"
-        android:background="@drawable/bg_state_textview"
-        android:padding="5dp"
-        android:textSize="25sp"
-        android:text="Click me"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <CheckBox
-        android:padding="10dp"
-        android:drawablePadding="5dp"
-        android:layout_marginTop="50dp"
-        android:button="@drawable/bg_checkbox"
-        android:text="Android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <!--    <TextView-->
+    <!--        android:focusable="true"-->
+    <!--        android:background="@drawable/bg_state_textview"-->
+    <!--        android:padding="5dp"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:text="Click me"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+    <!--    <CheckBox-->
+    <!--        android:padding="10dp"-->
+    <!--        android:drawablePadding="5dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:button="@drawable/bg_checkbox"-->
+    <!--        android:text="Android"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#8E24AA"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEX # FF 673AB7"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewRGB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="RGB 255 103 58 183"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="A"
+                android:textColor="#8E8E8E"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarAlpha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:progressTint="#8E8E8E"
+                android:secondaryProgressTint="#8E8E8E"
+                android:thumbTint="#8E8E8E" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="R"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:progressTint="#FF0000"
+                android:secondaryProgressTint="#FF0000"
+                android:thumbTint="#FF0000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="G"
+                android:textColor="#87E820"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:progressTint="#87E820"
+                android:secondaryProgressTint="#87E820"
+                android:thumbTint="#87E820" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="B"
+                android:textColor="#039BE5"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:progressTint="#039BE5"
+                android:secondaryProgressTint="#039BE5"
+                android:thumbTint="#039BE5" />
+        </RelativeLayout>
+    </LinearLayout>
+
 
 </LinearLayout>
